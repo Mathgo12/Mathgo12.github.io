@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Surya Appana's Portfolio</title>
+</head>
+<body>
+    <div class="div-heading">
+        <h1 class="heading">Surya Appana's Webpage</h1>
+    </div>
+    <div class="div-body">
+        <div class="div-sub">
+            <h3>About</h3>
+            <p class="summary">
+                I am a current undergraduate student studying Applied Mathematics and Computer Science at
+                University of California, Berkeley. I am passionate about data science with a focus on
+                deep learning and computer vision with convolutional neural networks, and I enjoy learning
+                applied topics in linear algebra, differential equations, and vector calculus.
+                I aim to pursue a career that involves designing novel machine and deep learning methodologies
+                to solve real-world challenges.
+            </p>
+        </div>
+        <div class="div-sub">
+            <div class="wrapper">
+                <h3>Contact</h3>
+                <p>Email: <a href = "mailto:name@gmail.com">sur123app@gmail.com</a></p>
+                <p>Phone: <a href="tel:Number">845-380-2432</a></p>
+                <a href="https://www.linkedin.com/in/surya-a-44a3621aa/" style="color: blue;">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="div-body">
+        <div class="div-sub">
+            <h3>Education</h3>
+            <p>University of California, Berkeley: 2022 - 2026: <a style="color: blue;"
+                    href="Academic Summary - Spring 2023.pdf" download="transcript">Transcript</a></p>
+            <ul>
+                <li>Math 54: Linear Algebra and Differential Equations</li>
+                <li>Math 55: Discrete Mathematics</li>
+                <li>Math 110: Linear Algebra (advanced)</li>
+                <li>CS 61a: The Structure and Interpretation of Computer Programs (Python)</li>
+                <li>Data C8: Foundations of Data Science</li>
+                <li>Cubstart: Full Stack Website Development (MongoDB, Express.js, Node.js, HTML/CSS/JS)</li>
+            </ul>
+        </div>
+        <div class="div-sub">
+            <div class="wrapper">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Machine Learning in Python with Pytorch, Tensorflow, Sci-kit Learn, Numpy, Pandas.</li>
+                    <li>Programming Languages: Python, R, Java, Javascript, SQL</li>
+                    <li>Website Development with HTML, CSS, Javascript and Node.js, Express.js</li>
+                    <li>Working with Git and Github</li>
+                    <li>Tableau for data visualization</li>
+                    <li>Communication and research skills</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="div-body">
+        <table class="projects-table">
+            <caption><h3>Projects and Research</h3></caption>
+            <tr>
+                <td class="project-title">
+                    <b>Wildfire Burned Area Segmentation with Satellite Imagery (Research)</b>
+                    <p>UC Davis, Professor Ali Moghimi</p>
+                    <p>June 2023 - Present<p>
+                </td>
+                <td class="project-descr">I am currently working on implementing specialized convolutional U-Net algorithms for
+                    segmenting burned areas in multispectral Sentinel-2 Level 2A satellite images of California 2020 wildfires.
+                    The end goal is to combine methods for active fire detection, burned area segmentation, and
+                    smoke detection to devise a single deep learning model for simulateous prediction of
+                    in all three aspects. Current progress includes a well-performing baseline U-Net for burned area
+                    segmentation using red, green, and blue band images after data augmentation.
+                </td>
+                <td>
+                    <img src="images/burned_area_segmentation_img.png" style="width: 200px; height: 200px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="project-title">
+                    <b>Exercise Recommender Web Application</b>
+                    <p>February - May 2023</p>
+                    <a href="https://github.com/Mathgo12/exercise_app/tree/main" style="color: blue;">Github Repository</a>
+                </td>
+                <td class="project-descr">This group project used tools such as node.js, express.js, MongoDB, and
+                    front-end web development tools to create an app that generates
+                    exercise recommendations and allows users to store and personalize exercises to
+                    their own interests. We use an API to retrieve exercise descriptions classified into different
+                    muscle groups, whereby users can select a muscle group to receive a random associated exercise.
+                    We also use an API to generate and display famous motivational quotes on the home page.
+                </td>
+                <td>
+                    <img src="images/exercise_app_img.png" style="width: 200px; height: 200px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="project-title">
+                    <b>Columbia River Chinook Salmon Growth Research with Random Forest Models</b>
+                    <p>UC Davis, Baskett Lab</p>
+                    <p>January - July 2021<p>
+                    <a href="https://github.com/Mathgo12/Chinook-Growth-Project" style="color: blue;">Github Repository</a>
+                </td>
+                <td class="project-descr">I worked with a PhD student working within the Baskett Lab on
+                    machine learning and statistical algorithms for predicting growth of
+                    salmon across populations and time in the Columbia River. I used both generalized additive models
+                    (GAMs) and Random Forest models to make predictions using Python tools. Random Forest was also
+                    used to assess variable importance, where the variables included climate and oceanographic predictors
+                    that influence the growth of salmon.
+                </td>
+                <td>
+                    <img src="images/chinook_project_img.png" style="width: 200px; height: 150px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="project-title">
+                    <b>Machine Learning in Environmental Science Article Publication</b>
+                    <p>Journal of Youths in Science</p>
+                    <p>February 2021</p>
+                    <a href="https://issuu.com/journys7/docs/journys_12.2" style="color: blue;">Link to Journal Issue 12.2</a>
+                </td>
+                <td class="project-descr">
+                    I extensively researched and discussed (~ 1900 words) the mechanics convolutional neural networks and
+                    a number of applications of computer vision algorithms
+                    in tackling climate change, mainly deforestation detection and precision agriculture.
+                    The research article is titled "Machine Learning for a Greener Planet."
+                </td>
+                <td>
+                    <img src="images/research_article_img.jpg" style="width: 200px; height: 150px;">
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
