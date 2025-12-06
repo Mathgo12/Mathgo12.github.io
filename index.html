@@ -13,28 +13,121 @@
         <div class="div-sub">
             <h3>About</h3>
             <p class="summary">
-                I am a current undergraduate student studying Applied Mathematics and Computer Science at
-                University of California, Berkeley. I am passionate about data science with a focus on
-                deep learning and computer vision with convolutional neural networks, and I enjoy learning
-                applied topics in linear algebra, differential equations, and vector calculus.
-                I aim to pursue a career that involves designing novel machine and deep learning methodologies
-                to solve real-world challenges.
+                I am an undergraduate student studying Applied Mathematics and Data Science at the
+                University of California, Berkeley. I am passionate about data science a focus on machine and deep learning
+                theory and applications in healthcare, biomedical, and drug contexts. I also enjoy exploring applied math areas
+                such as numerical linear algebra. I aim to pursue a career focused in AI for health-centered research.
             </p>
         </div>
         <div class="div-sub">
             <div class="wrapper">
                 <h3>Contact</h3>
-                <p>Email: <a href = "mailto:name@gmail.com">sur123app@gmail.com</a></p>
-                <p>Phone: <a href="tel:Number">845-380-2432</a></p>
+                <p>Email: sur123app at gmail dot com</p>
                 <a href="https://www.linkedin.com/in/surya-a-44a3621aa/" style="color: blue;">LinkedIn</a>
             </div>
         </div>
     </div>
     <div class="div-body">
+        <table class="projects-table">
+            <caption><h3>Projects and Research</h3></caption>
+            <tr>
+                <td class="project-title">
+                    <b>Genomic Analysis of Pseudonomas alloputida</b>
+                    <p>UC Berkeley, Compbio C131 Introduction to Computational Molecular and Cell Biology </p>
+                    <p>May 2025 - August 2025</p>
+                    <a href="BioE_131_Final_Project.pdf" style="color: blue;">Final Report:</a><i>Genome Analysis of Pseudomonas alloputida</i>
+                </td>
+                <td class="project-descr">
+                    The goal of this project was to fully characterize a Pseudomonas alloputida isolate by assembling its genome, annotating its functional content, reconstructing its metabolic pathways, and placing it within an evolutionary context.
+                    This required several stages: raw read quality control, filtering and trimming, long-read genome assembly, assembly quality assessmenst, genome annotation, metabolic modeling, and comparative phylogenetics. My contributions focused
+                    on the early computational pipeline—processing and refining the Nanopore and Illumina sequencing data using FASTQC, Filtlong, Cutadapt, and Trimmomatic, assembling the genome with Flye, and evaluating assembly accuracy and completeness
+                    with QUAST and CheckM. These steps produced a high-quality, single-contig assembly that enabled the rest of the team to perform downstream analyses. As a whole, the project revealed that the complete and uncontaminated P.
+                    putida–group genome isolate has extensive metabolic versatility and a broad suite of xenobiotic degradation pathways, consistent with an adaptable environmental bacterium found in soil and wastewater systems.
+                </td>
+                <td style="text-align: center; vertical-align:top;">
+                    <img src="images/BioE 131 Final Project.png" style="width: 200px; height: 200px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="project-title">
+                    <b>Coupling AI Co-scientists with high-performance computing (HPC) for the discovery of metal-organic frameworks (MOFs) for carbon capture</b>
+                    <p>Big Data REU: University of Chicago </p>
+                    <p>May 2025 - August 2025</p>
+                    <a href="Big_Data_REU_2025___SC25_Poster.pdf" style="color: blue;">Poster</a>
+                </td>
+                <td class="project-descr">
+                    I worked with professor Kyle Chard at the University of Chicago on coupling large language model (LLM) agents with MOF discovery tools run on HPC resources. Agents include an LLM for generating SMILES of organic linker molecules,
+                    assembler for combining linkers and inorganic metal nodes, molecular dynamics simulation (LAMMPS) for estimating structural stability, and deep-learning model for predicting MOF properties (MOF Transformer). We demonstrated success in the ability of the LLM agents
+                    to leverage HPC resources - including multiple compute nodes from the Purdue Anvil supercomputer - to accerate MOF discovery. Findings were presented through a poster at ACM Supercomputing 2025.
+                </td>
+                <td style="text-align: center; vertical-align:top;">
+                    <img src="images/ai_coscientist.png" style="width: 200px; height: 170px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="project-title">
+                    <b>Topic Modeling of Mental Health Forum Posts for Thematic Analysis</b>
+                    <p>National University of Singapore (NUS), Institute of Mathematical Sciences (IMS), Ministry of Health Office of Healthcare Transformation (MOHT)</p>
+                    <p>May 2024 - July 2024</p>
+                    <a href="PUBLICATION - Digital Mental Health Discourse Among Singaporean Youth.pdf" style="color: blue;">Publication:</a><i> Digital Mental Health Discourse Among Singaporean Youth: A Topic Modeling Analysis and Comparison to International Platforms</i>
+                </td>
+                <td class="project-descr">
+                    I worked with Singapore's Ministry of Health, Office of Healthcare Transformation (MOHT)
+                    to research posts in MOHT's mental health forum, specifically to discover themes and topics
+                    discussed by users. Topic modeling algorithms researched include Latent Dirichlet Allocation (LDA),
+                    Nonnegative Matrix Factorization (NMF), Top2Vec, and BERTopic. A novel clustering method was
+                    proposed to account for the stochastic nature of BERTopic, the best performing algorithm on our dataset.
+                    A comparative analysis between mental health posts on MOHT's forum, Reddit, and HardwareZone (Singaporean forum)
+                    was performed to discover insights into similarities and differences based on type of forum and demographics. The
+                    project was presented at the 2025 Joint Mathematics Meetings.
+                </td>
+                <td style="text-align: center; vertical-align:top;">
+                    <img src="images/rips_moht_pic.png" style="width: 200px; height: 170px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="project-title">
+                    <b>Wildfire Burned Area Segmentation with Satellite Imagery (Research)</b>
+                    <p>UC Davis, Professor Ali Moghimi</p>
+                    <p>June 2023 - August 2023<p>
+                </td>
+                <td class="project-descr">I worked on implementing specialized convolutional U-Nets for
+                    segmenting burned areas in multispectral Sentinel-2 Level 2A satellite images of California 2020 wildfires.
+                    The end goal is to combine methods for active fire detection, burned area segmentation, and
+                    smoke detection to devise a single deep learning model for simulateous prediction of
+                    in all three aspects. Current progress includes a well-performing baseline U-Net for burned area
+                    segmentation using red, green, and blue band images after data augmentation.
+                </td>
+                <td style="text-align: center; vertical-align:top;">
+                    <img src="images/burned_area_segmentation_img.png" style="width: 200px; height: 200px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="project-title">
+                    <b>Columbia River Chinook Salmon Growth Research with Random Forest Models</b>
+                    <p>UC Davis, Baskett Lab</p>
+                    <p>January - July 2021<p>
+                    <a href="https://github.com/Mathgo12/Chinook-Growth-Project" style="color: blue;">Github Repository</a>
+                </td>
+                <td class="project-descr">I worked with a PhD student working within the Baskett Lab on
+                    machine learning and statistical algorithms for predicting growth of
+                    salmon across populations and time in the Columbia River. I used both generalized additive models
+                    (GAMs) and Random Forest models to make predictions using Python tools. Random Forest was also
+                    used to assess variable importance, where the variables included climate and oceanographic predictors
+                    that influence the growth of salmon.
+                </td>
+                <td style="text-align: center; vertical-align:top;">
+                    <img src="images/chinook_project_img.png" style="width: 200px; height: 170px;">
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="div-body">
         <div class="div-sub">
             <h3>Education</h3>
             <p>University of California, Berkeley: 2022 - 2026: <a style="color: blue;"
-                    href="Unofficial Transcript - Spring 2025.pdf" download="transcript">Transcript</a></p>
+                    href="Transcript - Pre Fall 2025.pdf" download="transcript">Transcript</a></p>
             <ul>
                 <li>Math 54: Linear Algebra and Differential Equations</li>
                 <li>Math 55: Discrete Mathematics</li>
@@ -75,118 +168,6 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="div-body">
-        <table class="projects-table">
-            <caption><h3>Projects and Research</h3></caption>
-            <tr>
-                <td class="project-title">
-                    <b>Coupling AI Co-scientists with high-performance computing (HPC) for the discovery of metal-organic frameworks (MOFs) for carbon capture</b>
-                    <p>Big Data REU: University of Chicago </p>
-                    <p>May 2025 - August 2025</p>
-                    <a href="Big_Data_REU_2025___SC25_Poster.pdf" style="color: blue;">Poster</a>
-                </td>
-                <td class="project-descr">
-                    I worked with professor Kyle Chard at the University of Chicago on coupling large language model (LLM) agents with MOF discovery tools run on HPC resources. Agents include an LLM for generating SMILES of organic linker molecules,
-                    assembler for combining linkers and inorganic metal nodes, molecular dynamics simulation (LAMMPS) for estimating structural stability, and deep-learning model for predicting MOF properties (MOF Transformer). We demonstrated success in the ability of the LLM agents
-                    to leverage HPC resources - including multiple compute nodes from the Purdue Anvil supercomputer - to accerate MOF discovery. Findings were presented through a poster at ACM Supercomputing 2025.
-                </td>
-                <td>
-                    <img src="images/ai_coscientist.png" style="width: 200px; height: 200px;">
-                </td>
-            </tr>
-            <tr>
-                <td class="project-title">
-                    <b>Topic Modeling of Mental Health Forum Posts for Thematic Analysis</b>
-                    <p>National University of Singapore (NUS), Institute of Mathematical Sciences (IMS), Ministry of Health Office of Healthcare Transformation (MOHT)</p>
-                    <p>May 2024 - July 2024</p>
-                    <a href="PUBLICATION - Digital Mental Health Discourse Among Singaporean Youth.pdf" style="color: blue;">Publication:</a><i> Digital Mental Health Discourse Among Singaporean Youth: A Topic Modeling Analysis and Comparison to International Platforms</i>
-                </td>
-                <td class="project-descr">
-                    I worked with Singapore's Ministry of Health, Office of Healthcare Transformation (MOHT)
-                    to research posts in MOHT's mental health forum, specifically to discover themes and topics
-                    discussed by users. Topic modeling algorithms researched include Latent Dirichlet Allocation (LDA),
-                    Nonnegative Matrix Factorization (NMF), Top2Vec, and BERTopic. A novel clustering method was
-                    proposed to account for the stochastic nature of BERTopic, the best performing algorithm on our dataset.
-                    A comparative analysis between mental health posts on MOHT's forum, Reddit, and HardwareZone (Singaporean forum)
-                    was performed to discover insights into similarities and differences based on type of forum and demographics. The
-                    project was presented at the 2025 Joint Mathematics Meetings.
-                </td>
-                <td>
-                    <img src="images/rips_moht.jpg" style="width: 200px; height: 200px;">
-                </td>
-            </tr>
-            <tr>
-                <td class="project-title">
-                    <b>Wildfire Burned Area Segmentation with Satellite Imagery (Research)</b>
-                    <p>UC Davis, Professor Ali Moghimi</p>
-                    <p>June 2023 - August 2023<p>
-                </td>
-                <td class="project-descr">I worked on implementing specialized convolutional U-Nets for
-                    segmenting burned areas in multispectral Sentinel-2 Level 2A satellite images of California 2020 wildfires.
-                    The end goal is to combine methods for active fire detection, burned area segmentation, and
-                    smoke detection to devise a single deep learning model for simulateous prediction of
-                    in all three aspects. Current progress includes a well-performing baseline U-Net for burned area
-                    segmentation using red, green, and blue band images after data augmentation.
-                </td>
-                <td>
-                    <img src="images/burned_area_segmentation_img.png" style="width: 200px; height: 200px;">
-                </td>
-            </tr>
-            <tr>
-                <td class="project-title">
-                    <b>Exercise Recommender Web Application</b>
-                    <p>February - May 2023</p>
-                    <a href="https://github.com/Mathgo12/exercise_app/tree/main" style="color: blue;">Github Repository</a>
-                </td>
-                <td class="project-descr">This group project used tools such as node.js, express.js, MongoDB, and
-                    front-end web development tools to create an app that generates
-                    exercise recommendations and allows users to store and personalize exercises to
-                    their own interests. We use an API to retrieve exercise descriptions classified into different
-                    muscle groups, whereby users can select a muscle group to receive a random associated exercise.
-                    We also use an API to generate and display famous motivational quotes on the home page.
-                </td>
-                <td>
-                    <img src="images/exercise_app_img.png" style="width: 200px; height: 200px;">
-                </td>
-            </tr>
-            <tr>
-                <td class="project-title">
-                    <b>Columbia River Chinook Salmon Growth Research with Random Forest Models</b>
-                    <p>UC Davis, Baskett Lab</p>
-                    <p>January - July 2021<p>
-                    <a href="https://github.com/Mathgo12/Chinook-Growth-Project" style="color: blue;">Github Repository</a>
-                </td>
-                <td class="project-descr">I worked with a PhD student working within the Baskett Lab on
-                    machine learning and statistical algorithms for predicting growth of
-                    salmon across populations and time in the Columbia River. I used both generalized additive models
-                    (GAMs) and Random Forest models to make predictions using Python tools. Random Forest was also
-                    used to assess variable importance, where the variables included climate and oceanographic predictors
-                    that influence the growth of salmon.
-                </td>
-                <td>
-                    <img src="images/chinook_project_img.png" style="width: 200px; height: 150px;">
-                </td>
-            </tr>
-            <tr>
-                <td class="project-title">
-                    <b>Machine Learning in Environmental Science Article Publication</b>
-                    <p>Journal of Youths in Science</p>
-                    <p>February 2021</p>
-                    <a href="https://issuu.com/journys7/docs/journys_12.2" style="color: blue;">Link to Journal Issue 12.2</a>
-                </td>
-                <td class="project-descr">
-                    I extensively researched and discussed (~ 1900 words) the mechanics convolutional neural networks and
-                    a number of applications of computer vision algorithms
-                    in tackling climate change, mainly deforestation detection and precision agriculture.
-                    The research article is titled "Machine Learning for a Greener Planet."
-                </td>
-                <td>
-                    <img src="images/research_article_img.jpg" style="width: 200px; height: 150px;">
-                </td>
-            </tr>
-
-        </table>
     </div>
 </body>
 </html>
