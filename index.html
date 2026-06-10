@@ -29,20 +29,66 @@
     </div>
     <div class="div-body">
         <table class="projects-table">
-            <caption><h3>Projects and Research</h3></caption>
+            <caption><h3>Projects and Research</h3>
+            <tr>
+                <td class="project-title">
+                    <b>Prediction of drug solubility from SMILES with Mixture-of-Experts Models and Agents</b>
+                    <p>Advisor: Alan Cheng, Senior Director at Merck</p>
+                    <p>University of California, Berkeley</p>
+                    <p>Jan 2025 - May 2026</p>
+                    <a href="DSD x Merck Symposium Poster.pdf" style="color: blue;">Poster</a>
+                </td>
+                <td class="project-descr">
+                    Machine learning models for predicting molecular properties, such as solubility, are valuable tools in early-stage drug discovery,
+                    enabling researchers to prioritize promising candidates and reduce experimental costs. Models, including QSAR models and Graph Neural Networks, exhibit
+                    diverse cabilities with difference strengths and weaknesses. A mixture-of-experts
+                    (MoE) framework offers a superior alternative: combining predictions from multiple
+                    models using adaptive weighting schemes driven by a gating network. In this work, we design and implement an MoE that
+                    achieves >5% improvement in R-squared compared to D-MPNN/Chemprop (SOTA) by incorporating a mixture of QSAR models and specialized GNNs (XGBoost,
+                    Random Forest, Light GBM, D-MPNN, and GIN). We note that an MoE approach is difficult to interpret, posing a transparency problem for researchers. Thus, we further
+                    explore a three-agent LLM-based framework that synthesizes model outputs dynamically and
+                    integrates molecular context to produce a final solubility prediction with an interpretable
+                    reasoning chain.
+                </td>
+                <td style="text-align: center; vertical-align:top;">
+                    <img src="images/mixture_of_experts.png" style="width: 200px; height: 170px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="project-title">
+                    <b>Knowledge Emergence in LLM Chain-of-Thought Reasoning</b>
+                    <p>Advisor: Will Fithian</p>
+                    <p>University of California, Berkeley</p>
+                    <p>Jan 2025 - May 2026</p>
+                    <a href="Chain_of_Thought_Interpretability_Project.pdf" style="color: blue;">Poster</a>
+                </td>
+                <td class="project-descr">
+                    Understanding why and how Chain-of-Thought (CoT) prompting affects LLM reasoning capabilities is critical
+                    to the deployment of LLMs in practice, especially in light of AI safety concerns.
+                    However, a precise mechanistic understanding of CoT-based reasoning is limited,
+                    with the majority of interpretability work for CoT reasoning focused on observational
+                    or correlational investigations. In this work, we first show that the pattern of answer token
+                    emergence is heterogenous across prompt regimes and depends on the dataset and model size. Furthemore, we
+                    show that CoT surface tokens are causally load-bearing for difficult problems,
+                    but less so for easy ones. Crucially, the model is not simply reading off its internal state — the model is also, to some degree, conditioned on the tokens it has
+                    already produced, even when those tokens are wrong.
+                </td>
+                <td style="text-align: center; vertical-align:top;">
+                    <img src="images/chain_of_thought.png" style="width: 200px; height: 170px;">
+                </td>
+            </tr>
             <tr>
                 <td class="project-title">
                     <b>Undergraduate Honors Thesis: Randomized Sketching for Generalized Eigenvalue Problems</b>
                     <p>Advisor: James Demmel</p>
                     <p>University of California, Berkeley</p>
-                    <p>August 2025 - December 2025</p>
-                    <a href="Senior_Thesis.pdf" style="color: blue;">Report</a>
+                    <p>Aug 2025 - May 2026</p>
+                    <a href="undergrad_senior_thesis.pdf" style="color: blue;">Thesis Report</a>
                 </td>
                 <td class="project-descr">
-                    Performed literature review of randomize numerical linear algebra, specifically randomized sketching, and generalized eigenvalue problems.
-                    Synthesized theory of eigenvalue and generalized eigenvalue problems, Krylov Subspace based methods (e.g. Rayleigh-Ritz), and applications in
-                    machine learning (e.g. Fisher Discriminant Analysis). Conducted preminary tests on how speed and accuracy vary based on choice of sketching matrix
-                    and embedding dimension. Created final report synthesizing literature and laying out objectives and methodologies.
+                    Performed literature review of randomize numerical linear algebra, specifically randomized sketching, and generalized eigenvalue problems (GEPs).
+                    Synthesized theory of eigenvalue and generalized eigenvalue problems, Krylov Subspace based methods (e.g. Rayleigh-Ritz), and randomized sketching.
+                    Compared multiple constructions of sketch-based algorithms for solving GEPs in practice.
                 </td>
                 <td style="text-align: center; vertical-align:top;">
                     <img src="images/senior_thesis_pic.png" style="width: 200px; height: 170px;">
@@ -56,7 +102,7 @@
                     <a href="Big_Data_REU_2025___SC25_Poster.pdf" style="color: blue;">Poster</a>
                 </td>
                 <td class="project-descr">
-                    I worked with professor Kyle Chard at the University of Chicago on coupling large language model (LLM) agents with MOF discovery tools run on HPC resources. Agents include an LLM for generating SMILES of organic linker molecules,
+                    Worked with professor Kyle Chard at the University of Chicago on coupling large language model (LLM) agents with MOF discovery tools run on HPC resources. Agents include an LLM for generating SMILES of organic linker molecules,
                     assembler for combining linkers and inorganic metal nodes, molecular dynamics simulation (LAMMPS) for estimating structural stability, and deep-learning model for predicting MOF properties (MOF Transformer). We demonstrated success in the ability of the LLM agents
                     to leverage HPC resources - including multiple compute nodes from the Purdue Anvil supercomputer - to accerate MOF discovery. Findings were presented through a poster at ACM Supercomputing 2025.
                 </td>
